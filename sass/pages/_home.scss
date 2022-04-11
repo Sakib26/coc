@@ -1,0 +1,29 @@
+.section-about {
+    background-color: $color-gray-light-1;
+    padding: 20rem 0 18rem 0;
+    margin-top: -15vh;
+
+
+}
+
+.section-features {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    padding: 40rem;
+    clip-path: polygon(0% 10%,50% 0%, 50% 0%, 100% 10%, 100% 63%, 100% 100%, 50% 100%, 0 100%, 50% 0, 0 100%, 100% 0, 0 100%, 0 100%);
+    margin-top: -9rem;
+
+    @include respond (tab-land) {
+        padding: 35rem;
+    }
+
+    @include respond (phone) {
+        padding: 30rem;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left bottom, $color-secondary-light, $color-secondary-dark);
+    }
+}
+
+
+

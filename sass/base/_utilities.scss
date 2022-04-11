@@ -1,0 +1,51 @@
+ .u-center-text {
+     text-align: center;
+ }
+
+ .u-margin-top {
+     margin-top: 10rem;
+
+     @include respond (tab-land) {
+        margin-top: 0;
+    }
+ }
+
+ .u-margin-bottom {
+    margin-bottom: -50rem;
+}
+
+.u-margin-top-bottom {
+    margin: 10rem 0 -40rem 0;
+}
+
+#sakib {
+    background-color: $color-gray-light-1;
+    height: 15rem;
+    padding-top: 5rem;
+
+    @include respond (tab-land) {
+        padding-top: 1.2rem;  
+    }
+}
+
+.u-mid-margin{
+    @include respond (tab-land) {
+        position: absolute;
+        top: 244.5rem;
+        left: 26rem;
+    }
+
+    @include respond (tab-port) {
+        position: absolute;
+        top: 229.5rem;
+        left: 20rem;
+    }
+
+    @include respond (phone) {
+        position: absolute;
+        top: 200rem;
+        left: 15rem;
+    }
+}
+
+

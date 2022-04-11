@@ -1,0 +1,47 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light,0.7),
+        rgba($color-secondary-dark,0.7)),
+        url(../img/clash-wall.jpg);
+
+    background-size: cover;
+    background-position: middle;
+    border-radius: 1rem;
+    clip-path: polygon(50% 0%, 74% 0, 100% 0, 100% 63%, 100% 90%, 50% 100%, 0 90%, 0 56%, 0 35%, 0 0);
+    position: relative;
+
+
+    @include respond (tab-land) {
+        height: 75vh;  
+    }
+
+    @include respond (tab-port) {
+        height: 55vh;
+        border-radius: 0;  
+    }
+
+    @include respond (phone) {
+        height: 35vh;  
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 9.5rem;
+        transition: all .3s;
+        cursor: pointer;
+        transition: all .3s ease;
+    
+        &:hover {
+            transform: scale(1.15);       
+        }
+    }
+
+    
+}    
